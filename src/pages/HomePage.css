@@ -3,36 +3,97 @@
 .home-container {
   width: 100%;
   overflow: hidden;
+  padding-top: 80px;
+}
+
+.top-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .background-image {
-  position: relative;
   width: 100%;
-  height: 60vh;
+  height: 55%;
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   color: white;
-  text-align: center;
+  text-align: left;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.background-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .content {
-  position: relative;
-  z-index: 1;
+  padding: 20px;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  font-size: 4rem;
+  margin-top: 100px;
+  z-index: 99;
+}
+
+.content h1 span {
+  font-weight: 100;
+}
+
+.slogan-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  text-align: center;
+  color: #222;
+}
+
+.slogan-bold {
+  font-weight: 600;
+  font-size: 6em;
+  margin-bottom: -60px;
+  margin-top: -250px;
+}
+
+.slogan-fine {
+  font-weight: 100;
+  font-size: 4em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .learn-more-btn {
   display: inline-block;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 100px;
   border: 2px solid #00b300;
   border-radius: 25px;
   background: none;
-  color: #00b300;
+  color: #222;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: semi-bold;
+  font-size: 1.5em;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
 }
@@ -44,33 +105,70 @@
 
 .second-section {
   display: flex;
+  height: calc(100vh - 80px); /* Ajuste pour prendre en compte le footer */
   padding: 50px 20px;
   background-color: #f9f9f9;
+  align-items: center; /* Centrer verticalement le contenu */
 }
 
 .left {
   flex: 1;
+  flex-basis: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -200px;
+  margin-left: 50px;
+  height: 1000px;
+  background: lightcoral;
 }
 
 .section-image {
   max-width: 100%;
   height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .right {
   flex: 1;
-  padding: 20px;
+  flex-basis: 60%;
+  height: 1000px;
+  margin-top: -200px;
+  margin-right: 50px;
+  background: lightblue;
+}
+
+.right .block {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .block img.icon {
+  margin-right: 20px;
+  width: 400px;
+  height: auto;
+}
+
+.right .separator {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px 0;
 }
 
 .right h2 {
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 3em;
 }
 
 .right p {
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.txt-one {
+  background: lightcoral;
 }

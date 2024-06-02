@@ -1,11 +1,17 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 100px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 100px;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .logo_header {
@@ -14,20 +20,24 @@
 }
 
 .logo-header {
-  height: 50px;
+  height: 80px;
 }
 
 .nav {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  padding-right: 50px;
+  box-sizing: border-box;
 }
 
 .nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 50rem;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-item {
@@ -38,7 +48,8 @@
 .nav-item a {
   color: #000;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.8em;
   position: relative;
   display: inline-block;
 }
@@ -47,7 +58,7 @@
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 1px;
   display: block;
   margin: auto;
   left: 0;
@@ -73,14 +84,16 @@
 .login-button a {
   display: flex;
   align-items: center;
-  color: #00b300;
+  color: #222;
   border: 2px solid #00b300;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 25px;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: x-large;
   font-family: "Arial", sans-serif;
   transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
 }
 
 .login-button a:hover {
@@ -89,5 +102,5 @@
 }
 
 .login-icon {
-  margin-right: 10px;
+  margin-right: 15px;
 }

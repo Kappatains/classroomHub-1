@@ -1,4 +1,3 @@
-// src/components/Header.js
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,45 +8,40 @@ import logo_header from "../img/logo_header.png";
 const Header = () => {
   const location = useLocation();
 
-  const scrollToSection = (e) => {
+  const scrollTo = (e, sectionId) => {
     e.preventDefault();
-    document
-      .getElementById("second-section")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <header className="header">
       <div className="logo_header">
-        <Link to="/">
+        <a href="#top-section" onClick={(e) => scrollTo(e, "top-section")}>
           <img
             src={logo_header}
             alt="Classroom Hub logo"
             className="logo-header"
           />
-        </Link>
+        </a>
       </div>
       <nav className="nav">
         <ul className="nav-list">
           <li
             className={`nav-item ${location.pathname === "/" ? "active" : ""}`}
           >
-            <Link to="/">Accueil</Link>
+            <a href="#top-section" onClick={(e) => scrollTo(e, "top-section")}>
+              Accueil
+            </a>
           </li>
-          <li
-            className={`nav-item ${
-              location.pathname === "/produit" ? "active" : ""
-            }`}
-          >
-            <a href="#second-section" onClick={scrollToSection}>
+          <li className="nav-item">
+            <a
+              href="#second-section"
+              onClick={(e) => scrollTo(e, "second-section")}
+            >
               Produit
             </a>
           </li>
-          <li
-            className={`nav-item ${
-              location.pathname === "/contact" ? "active" : ""
-            }`}
-          >
+          <li className="nav-item">
             <Link to="/contact">Contact</Link>
           </li>
         </ul>
