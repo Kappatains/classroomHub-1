@@ -36,6 +36,11 @@ const HomePage = () => {
           <button className="learn-more-btn" onClick={scrollToSection}>
             En savoir plus
           </button>
+          <div className="scroll-indicator">
+            <span className="chevron"></span>
+            <span className="chevron"></span>
+            <span className="chevron"></span>
+          </div>
         </div>
       </div>
       <div id="second-section" className="second-section">
@@ -49,7 +54,10 @@ const HomePage = () => {
         <div className="right">
           <div className="block">
             <img src={iconLaptop} alt="Laptop" className="icon" />
-            <h2 className="txt-one">Réservation d'une salle<br /> de n'importe où</h2>
+            <h2 className="txt-one">
+              Réservation d'une salle
+              <br /> de n'importe où
+            </h2>
           </div>
           <div className="separator"></div>
           <div className="block two">
