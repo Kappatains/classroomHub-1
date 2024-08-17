@@ -17,7 +17,7 @@ export default function Calendar ({events, setEvents}) {
     const [currentMonth, setCurrentMonth] = useState(currentDate.getMonth());
     const [currentYear, setCurrentYear] = useState(currentDate.getFullYear());
     const [selectedDate, setSelectedDate] = useState(currentDate);
-    const [eventStartTime, setEventStartTime] = useState({hours: currentDate.getHours(), minutes :currentDate.getMinutes()});
+    const [eventStartTime, setEventStartTime] = useState({hours: currentDate.getHours().toString().padStart(2,'0'), minutes :currentDate.getMinutes().toString().padStart(2,'0')});
     const [eventEndTime, setEventEndTime] = useState({hours: '00', minutes :'00'});
     const [eventText, setEventText] = useState('');
     const [eventTitle, setEventTitle] = useState('');
