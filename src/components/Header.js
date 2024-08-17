@@ -44,6 +44,9 @@ const Header = () => {
           <li className="nav-item">
             <Link to="/contact">Contact</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/calendar">Calendar</Link>
+          </li>
         </ul>
       </nav>
       <div className="login-button">

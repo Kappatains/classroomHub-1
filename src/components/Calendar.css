@@ -1,0 +1,88 @@
+.calendar{
+    width: 100vh;
+    /* background-color: #c3c6cc; */
+    margin-left: 1rem;
+    display: flex;
+    top:0;
+}
+
+.select-date{
+    width: 40%;
+    /* background-color:aqua */
+}
+.add-info{
+    width: 60%;
+    /* background-color: #c97f1a; */
+}
+.heading{
+    width: 100%;
+}
+.navigate-date{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.buttons{
+    display: flex;
+    margin-left: auto;
+}
+
+.buttons i {
+    width: 2.0rem;
+    height: 2.0rem;
+    border-radius: 50%;
+    background-color: #2c3542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #c97f1a;
+    cursor: pointer;
+}
+
+.weekdays{
+    width : 100%;
+    display: flex;
+
+}
+.weekdays span {
+    width: calc(100%/7);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.days span{
+    width: calc(100%/7);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.title{
+    width : 100%;
+}
+
+.current-day{
+    background-color: rgb(81, 93, 94);
+    border-radius: 50%;
+    box-shadow: 0 0 1.5rem 1rem rgba(66, 75, 78, 0.171);
+}
+
+.selected-date{
+    background-color: rgba(51, 255, 0, 0.616);
+    border-radius: 50%;
+    box-shadow: 0 0 1.5rem 1rem rgba(9, 165, 56, 0.233);
+}
+
+/* .start-time{
+    display: block;
+} */

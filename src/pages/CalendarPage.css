@@ -1,0 +1,41 @@
+.calendar-page{
+    /* width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    height: inherit;
+    border-color: #962e2e;
+    border-style: dashed;
+    margin-bottom: 8vh; */
+    display: flex;
+    overflow-y: auto;
+
+}
+
+.calendar-module{
+    /* width: 40%;
+    /* background-color: #c3c6cc; 
+    margin-left: 1rem;
+    display: flex;
+    position: sticky;
+    top:0;
+    padding-top:8vh */
+
+}
+.event-list{
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+  
+.add-event-button{
+    position: fixed;
+    bottom: 10vh;
+    border-radius: 50%;
+}
+
+.add-calendar-button{
+    position: fixed;
+    bottom: 15vh;
+    border-radius: 50%;
+}

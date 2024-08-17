@@ -1,0 +1,14 @@
+.list-events{
+    padding-bottom: 8vh;
+    width: 100vh;
+}
+.event-card{
+    display: flex;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+}
+
+.card-content{
+    align-items: center;
+}
